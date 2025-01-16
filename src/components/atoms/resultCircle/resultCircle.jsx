@@ -1,5 +1,5 @@
 import React from "react";  
-import "../../molecule/Result/result.css"
+import "../../molecule/Result/Result.css"
 function ResultCircle(){
     return (
 
