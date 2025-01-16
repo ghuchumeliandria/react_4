@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Atomic+Age&family=Big+Shoulders+Display:wght@100..900&family=Bungee+Spice&family=Coda:wght@400;800&family=Fira+Code:wght@300..700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&family=Russo+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* font-family: "Atomic Age", serif; */
+.result_container {
+  max-width: 375px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 38px 54px 55px 54px;
+  align-items: center;
+  border-radius: 32px;
+  gap: 35px;
+  background: var(
+    --Gradient-1,
+    linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%)
+  );
+}
+.result_heading h1 {
+  color: var(--Light-Blue, #cac9ff);
+  font-family: "Hanken Grotesk", serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+.resutl_circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(#461fb1, #2421c927);
+  color: white;
+  font-family: "Hanken Grotesk";
+}
+.resutl_circle h1 {
+  font-size: 72px;
+}
+.resutl_circle p {
+  color: var(--Light-Blue, #cac9ff8e);
+  font-weight: 700;
+}
+.result_description {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 260px;
+  font-family: "Hanken Grotesk";
+  color: white;
+}
+.result_description h1 {
+  font-size: 32px;
+}
+.result_description p {
+  font-size: 18px;
+  color: var(--Light-Blue, #cac9ff);
+}
+
+@media (max-width: 450px) {
+  .result_container {
+    height: 356px;
+    gap: 24px;
+    padding: 24px 58px 40px 57px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .result_heading h1 {
+    font-size: 18px;
+  }
+  .resutl_circle {
+    width: 140px;
+    height: 140px;
+  }
+  .resutl_circle h1{
+    font-size: 56px;
+  }
+  .result_description{
+    gap: 8px;
+    max-width: 260px;
+    width: 100%;
+  }
+  .result_description h1 {
+    font-size: 24px;
+  }
+  .result_description p {
+    font-size: 15px;
+  }
+}

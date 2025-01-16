@@ -1,0 +1,135 @@
+.summary_container {
+  padding: 40px;
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+.summary_heading h1 {
+  color: var(--Dark-Navy, #303b59);
+  font-family: "Hanken Grotesk";
+  font-size: 24px;
+}
+.score_category {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 288px;
+  width: 100%;
+}
+.score_category_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 16px;
+  border-radius: 12px;
+}
+.category_box {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.category_box h2 {
+  font-family: "Hanken Grotesk";
+  font-size: 18px;
+}
+
+.category_score p {
+  font-family: "Hanken Grotesk";
+  color: var(--Dark-Navy, #303b59);
+  font-size: 18px;
+  font-weight: 700;
+}
+.category_score p span {
+  color: var(--Dark-Navy, #303b59a9);
+}
+
+.summary_button {
+  max-width: 288px;
+  width: 100%;
+}
+.summary_button button {
+  width: 100%;
+  height: 56px;
+  border-radius: 128px;
+  background: var(--Dark-Navy, #303b59);
+  color: #fff;
+  font-family: "Hanken Grotesk";
+  font-size: 18px;
+  border: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.summary_button button:hover{
+  transition: 0.5s;
+  background: var(--Gradient-1, linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%));
+}
+
+/* score_category Colors */
+.red_background {
+  background: var(
+    --red-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #f55
+  );
+}
+.yellow_background {
+  background: var(
+    --yellow-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #ffb21e
+  );
+}
+.green_background {
+  background: var(
+    --green-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #00bb8f
+  );
+}
+.blue_background {
+  background: var(
+    --blue-95-white,
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #1125d6
+  );
+}
+
+.cl_red {
+  color: var(--Red, #f55);
+}
+.cl_blue {
+  color: var(--Blue, #1125d6);
+}
+.cl_green {
+  color: var(--Green, #00bb8f);
+}
+.cl_yellow {
+  color: var(--Yellow, #ffb21e);
+}
+
+@media (max-width: 450px) {
+  .summary_container {
+    max-width: 375px;
+    width: 100%;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
